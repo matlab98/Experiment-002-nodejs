@@ -1,0 +1,81 @@
+<html>
+<head>
+<link rel="shortcut icon" href="../image/circuito.ico">
+<link rel="icon" type="image/png" href="../image/circuito.png">
+<title>Ava</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.css" type="text/css"/>
+<link href="../plugins/calendar/monthly.css" rel="stylesheet" type="text/css"/>
+  <link href="../plugins/calendar/calendar.css" rel="stylesheet" type="text/css"/>
+</head>
+  <body>  
+   <section class="main">
+  <div id="mainCalendar" class="monthly">
+  			<div id="mycalendar"></div>
+  		</div></section>
+		
+    <section class="main">
+      <aside class="keep">
+        <ul>
+		 <li>
+            <a id="calendar">
+              <span><img class="fa fa-calendar"/></span>
+			   <span class="notif red">2</span>
+            </a>
+          </li>
+		  <li>
+            <a id="cron">
+              <span><img class="fa fa-cron"></span>
+			   <span class="notif red">2</span>
+            </a>
+          </li>
+          <li>
+            <a id="mail">
+              <span><img class="fa fa-mail"/></span>
+              <span class="notif red">1</span>
+            </a>
+          </li>         
+		  <li>
+            <a id="map">
+              <span><img class="fe fa-map"/></span> <span class="notif red">2</span>
+            </a>
+          </li>		   
+		   <li>
+            <a id="message">
+              <span><img class="fa fa-chat"/></span>
+			   <span class="notif red">2</span>
+            </a>
+          </li>
+		   <li>
+            <a id="task">
+              <span><img class="fe fa-task"/></span>  
+			   <span class="notif red">2</span>
+            </a>
+          </li>
+		   <li>
+            <a id="profile">
+              <span><img class="fe fa-profile"/></span>
+            </a>
+          </li>
+		   <li>
+            <a id="close">
+              <span><img class="fe fa-close"/></span>
+ 
+            </a>
+          </li>
+		  </ul>
+      </aside>
+
+    </section>
+<script src="../plugins/calendar/jquery.js"></script>
+<script src="../plugins/calendar/monthly.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".menu").click(function(){
+        $(".keep").toggleClass("width");
+    });
+});
+</script>
+</body>
+
+</html>
