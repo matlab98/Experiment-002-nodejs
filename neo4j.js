@@ -1,6 +1,6 @@
 xconst neo4j = require('neo4j-driver');
 
-const driver = neo4j.driver("bolt://192.168.1.81:7687", neo4j.auth.basic("neo4j", "Beyond1915"));
+const driver = neo4j.driver("bolt://192.168.1.81:7687", neo4j.auth.basic("neo4j", "password"));
 const session = driver.session();
 
 const personName = 'Alice';
